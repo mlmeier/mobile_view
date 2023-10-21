@@ -1,62 +1,54 @@
 body{
-    background-color: #d0739d;
-    color: white;
+
 }
-h1{
-    font-size:larger;
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #7cbdff;
+    color: rgb(0, 0, 0);
+    display:grid;
+    grid-template-columns: 1fr;
+   overflow: auto;
 }
+
 h2{
-    font-size:medium;
-    font-family:'Courier New', Courier, monospace;
-    color:yellow;
+    grid-column: 1/2;
 }
-h3{
-    font-size:medium;
-    font-family:'Courier New', Courier, monospace;
-    color:rgb(214, 214, 246);
+span{
+    max-width:20px;
 }
-p{
-    line-height: 50px;
-}
-img{
-    border: solid 5px palegreen;
-    padding:10px;
-    margin: 20px;
-    border-top-right-radius: 30px;
-}
-li{
-    display: inline-block;
-    border: solid 2px palegreen;
-    margin: 5px;
-    padding: 5px;
-    width: 125px;
-    color: yellow;
-    font-family: 'Courier New', Courier, monospace;
-    border-radius: 10px;
 
-}
 nav{
+
     border: 2px solid rgb(214, 214, 246);
+    
+    text-align: center;
+ 
+   
 }
-nav a{
-    background-color: blue;
-    margin: 5px;
+nav li{
+    display: inline-block;
 
+    font-size:5vw;
 
+    
+}
 
+#index{
+    color:blue;
+    text-decoration: underline;
+}
+#recipies{
+    color:blue;
+    text-decoration: underline;
+}
+#pets{
+    color:blue;
+    text-decoration: underline;
 }
 #skip{
     text-transform:underline;
 }
-.thumbnail{
-    border: 5px solid rgb(168, 168, 245);
-    margin: auto;
-    width: 250px;
-    display: block;
-    border-radius: 0;
-}
+
 #skip{
     position:absolute;
     left: -500px;
@@ -65,3 +57,4 @@ nav a{
     position:absolute;
     left: 200px;
 }
+
