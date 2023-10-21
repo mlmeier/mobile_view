@@ -3,7 +3,7 @@ body{
     font-family: Gill Sans,Open Sans,Montserrat,Roboto,sans-serif;
     background-color: white;
     color: black;
-
+    
 
 }
 img, video{
@@ -39,13 +39,15 @@ h1{
 
 }
 h2{
-    font-size:31px;
+    font-size:37px;
     margin-left:10px;
+    margin-top:20px;
     grid-column:1/-1;
+    font-weight:500;
 }
 h3{
     font-size:22px;
-    font-weight:bold;
+    font-weight:600;
     margin-left:10px;
     grid-column:1/-1;
 
@@ -157,7 +159,7 @@ nav li{
         color: black;
     
     }
-    #gif{
+    .gif{
         display:none;
     }
   }
