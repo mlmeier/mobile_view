@@ -1,60 +1,139 @@
+
 body{
+    font-family: Open Sans,Montserrat,Roboto,sans-serif;
+    background-color: #063458;
+    color: white;
+
+    animation-name: colorchange;
+    animation-duration: 2s;
+}
+img, video{
+    width:90%;
+    max-height:500px;
+  
+    display:block;
+    margin:auto;
+    margin-top: 5px;
+    margin-bottom:5px;
+    border:solid 10px #8e3a0c;
+    border-radius: 10px;
+}
+figcaption{
+    width:90%;
+    margin:auto;
+}
+h1{
+    
+    font-size:75px;
+    animation-name:slideIn;
+    animation-timing-function: ease-out;
+    animation-duration: 2s;
 
 }
-body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #7cbdff;
-    color: rgb(0, 0, 0);
-    display:grid;
-    grid-template-columns: 1fr;
-   overflow: auto;
-}
-
 h2{
-    grid-column: 1/2;
+    font-size:31px;
+    margin-left:10px;
+   
+}
+h3{
+    font-size:22px;
+    font-weight:bold;
+    margin-left:10px;
 }
 span{
-    max-width:20px;
+    margin-left:10px;
 }
 
+main{
+    grid-column:1/2;
+    
+}
+p{
+   font-size:20px;
+   margin: 10px 20px;
+   color:rgb(218, 218, 218);
+}
 nav{
-
-    border: 2px solid rgb(214, 214, 246);
+    display:grid;
+    width:100%;
+    top:0;
+    grid-row:1/2;
+    border-bottom: 2px solid grey;;
     
     text-align: center;
- 
+    align-content: end;
+    height:50px;
+    background-color: #10587f;
    
 }
 nav li{
     display: inline-block;
 
-    font-size:5vw;
-
+    font-size:6vw;
+    margin-right:1em;
     
 }
 
 #index{
-    color:blue;
+    color:rgb(174, 174, 174);
     text-decoration: underline;
 }
 #recipies{
-    color:blue;
+    color:rgb(174, 174, 174);
     text-decoration: underline;
 }
 #pets{
-    color:blue;
+    color:rgb(174, 174, 174);
     text-decoration: underline;
 }
 #skip{
     text-transform:underline;
 }
-
+    
 #skip{
     position:absolute;
     left: -500px;
 }
 #skip:focus{
     position:absolute;
-    left: 200px;
+    left: 0px;
 }
 
+
+
+@keyframes colorchange {
+    from {background-color: #8299b0;}
+    to {background-color: #063458;}
+}
+
+@keyframes slideIn {
+    from {
+        margin-left:100%;
+        width:300%;
+    }
+    to {
+        margin-left:0%;
+        width:100%;
+    }
+} 
+
+@media screen and (prefers-reduced-motion: reduce){
+    h1{
+    
+        font-size:75px;
+        animation:none;
+    }
+    body{
+        font-family: Lora,'Times New Roman', Times, serif;
+        background-color: #7cbdff;
+        color: rgb(0, 0, 0);
+        display:grid;
+        grid-template-columns: 1fr;
+        animation:none;
+        grid-gap:5px;
+ 
+    }
+    #gif{
+        display:none;
+    }
+  }
